@@ -95,7 +95,6 @@ cat<<"EOF" >> ~/.bashrc
 # put the repo tool on PATH.
 export PATH="$PATH:~/bin"
 EOF
-
 export PATH="$PATH:~/bin"
 
 # get the sdk.
@@ -107,6 +106,10 @@ cat<<"EOF" >> ~/.bashrc
 # put the chromite tools on PATH.
 export PATH="$PATH:~/coreos/chromite/bin"
 EOF
+export PATH="$PATH:~/coreos/chromite/bin"
+
+# create the sdk chroot.
+cros_sdk --create
 
 cat<<"EOF"
 # ALL DONE
